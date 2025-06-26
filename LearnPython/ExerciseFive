@@ -1,0 +1,43 @@
+Clothing = {
+    "label": "Zara",
+    "color": "red",
+    "size": "M"
+}
+print(Clothing["size"])
+
+Clothing["label"] = "H&M"
+print(Clothing)
+
+Clothing["category"] = "T-shirt"
+print(Clothing)
+
+print(list(Clothing.keys()))
+print(list(Clothing.values()))
+
+if "size" in Clothing:
+    print("Key 'size' is present.")
+else:
+    print("Key 'size' is missing.")
+
+for prop, val in Clothing.items():
+    print(prop, ":", val)
+
+Clothing.pop("color")
+print(Clothing)
+
+Clothing.clear()
+print(Clothing)
+
+user = {
+    "username": "Victor",
+    "age": 31,
+    "location": "Entebbe"
+}
+user_clone = user.copy()
+print(user_clone)
+
+classroom = {
+    "learner1": {"name": "Ann", "age": 18},
+    "learner2": {"name": "Mike", "age": 19}
+}
+print(classroom)

@@ -1,0 +1,42 @@
+people = ['Sam', 'Liam', 'Noah', 'Ethan', 'Amos']
+print(people[1])
+
+people[0] = 'George'
+print(people[0])
+
+people.append('Felix')
+print(people)
+
+people.insert(2, 'Nathan')
+print(people)
+
+del people[3]
+print(people)
+
+print(people[-1])
+
+colors = ['blue', 'yellow', 'grey', 'brown', 'maroon', 'cyan', 'navy']
+print(colors[2:5])
+
+nations = ['Nigeria', 'Ghana', 'Togo', 'Benin', 'Cameroon']
+nations_clone = nations.copy()
+print(nations_clone)
+
+for nation in nations:
+    print(nation)
+
+creatures = ['tiger', 'giraffe', 'buffalo', 'hippo', 'rhino']
+creatures.sort()
+print("Ascending:", creatures)
+
+creatures.sort(reverse=True)
+print("Descending:", creatures)
+
+for creature in creatures:
+    if 'o' in creature:
+        print(creature)
+
+first_batch = ['Grace', 'Helen', 'Victor']
+second_batch = ['Mark', 'Paul', 'Luke']
+combined_batch = first_batch + second_batch
+print(combined_batch)
