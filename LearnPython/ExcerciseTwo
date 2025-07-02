@@ -1,0 +1,40 @@
+phones = ("realme", "pixel", "infinix", "nokia")
+print("My top pick is", phones[1])
+
+print(phones[-2])
+
+phones_list = list(phones)
+phones_list[1] = "motorola"
+phones = tuple(phones_list)
+print(phones)
+
+phones = phones + ("oneplus",)
+print(phones)
+
+for model in phones:
+    print(model)
+
+temp_list = list(phones)
+del temp_list[0]
+phones = tuple(temp_list)
+print(phones)
+
+towns = ("Jinja", "Lira", "Soroti", "Hoima", "Kasese")
+print(towns)
+
+t1, t2, t3, t4, t5 = towns
+print(t1, t2, t3, t4, t5)
+
+print(towns[1:4])
+
+groupA = ("Brian", "Stella", "Joan")
+groupB = ("Lee", "Chris", "Faith")
+combined_names = groupA + groupB
+print(combined_names)
+
+shades = ("black", "white", "grey")
+shades_repeated = shades * 3
+print(shades_repeated)
+
+numbers = (5, 2, 6, 8, 3, 8, 1, 9, 8, 7)
+print(numbers.count(8))
